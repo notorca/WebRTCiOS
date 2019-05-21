@@ -184,7 +184,7 @@ class WebSocketListener: WebSocketDelegate {
                             self.names[index].textColor = UIColor.white
                             self.embedView(renderer, into: self.views[index])
                             self.participants[self.remoteParticipantId!]?.index = index
-                            self.views[index].bringSubview(toFront: self.names[index])
+                            self.views[index].bringSubviewToFront(self.names[index])
                         }
                     }
                 }

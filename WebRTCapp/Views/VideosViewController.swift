@@ -228,12 +228,12 @@ class VideosViewController: UIViewController {
         let width = (UIScreen.main.bounds.width)
         let height = (UIScreen.main.bounds.height)
         containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[view(" + width.description + ")]",
-                                                                    options: NSLayoutFormatOptions(),
+                                                                    options: NSLayoutConstraint.FormatOptions(),
                                                                     metrics: nil,
                                                                     views: ["view":view]))
         
         containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(" + height.description + ")]",
-                                                                    options:NSLayoutFormatOptions(),
+                                                                    options:NSLayoutConstraint.FormatOptions(),
                                                                     metrics: nil,
                                                                     views: ["view":view]))
         containerView.layoutIfNeeded()
